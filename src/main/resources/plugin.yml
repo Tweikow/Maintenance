@@ -1,0 +1,6 @@
+name: Maintenance
+version: 1.0
+author: Tweikow
+main: fr.maintenance.Main
+commands:
+  maintenance:
