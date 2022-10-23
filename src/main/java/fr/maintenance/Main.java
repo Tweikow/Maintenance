@@ -27,7 +27,8 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        super.onDisable();
+        Manager.setConfig();
+        log(this.getName() + " §cis Disable");
     }
 
     public static void log(String s){
