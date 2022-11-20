@@ -26,7 +26,7 @@ public class Maintenance implements CommandExecutor {
                     Manager.setStatut(true);
                     for (Player player : Bukkit.getOnlinePlayers()) {
                         if (!Manager.players.contains(player.getName()))
-                            player.kickPlayer(Main.instance.getConfig().getString("server_name").replace('&', '§') + "__§c   Une maintenance est actuellement en cours...__§9Merci de bien vouloir revenir plus tard !".replace("_", "\n"));
+                            player.kickPlayer(Main.instance.getConfig().getString("server_name").replace('&', '§') + "__§cUne maintenance est actuellement en cours...__§9   Merci de bien vouloir revenir plus tard !".replace("_", "\n"));
                     }
                     Bukkit.broadcastMessage("§cLa maintenance est désormais activé sur le serveur !");
                 } else sender.sendMessage("§cLa maintenance est déjà activé !");

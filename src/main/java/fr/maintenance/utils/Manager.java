@@ -42,7 +42,7 @@ public class Manager {
     public static void setConfig(){
         setFile();
         Main.instance.getConfig().set("boolean", statut);
-        Main.instance.saveConfig();
+        Main.instance.saveDefaultConfig();
         config.set("list", null);
 
         if (!players.isEmpty()) {
